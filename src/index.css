@@ -1,13 +1,31 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.input-container {
+  position: relative; /* Position relative for absolute positioning of icon */
+  margin-bottom: 15px; /* Slightly reduce space between inputs */
+  width: 100%; /* Full width for the container */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.icon {
+  position: absolute; /* Position icon absolutely within the container */
+  left: 10px; /* Space the icon from the left side */
+  top: 50%; /* Center the icon vertically */
+  transform: translateY(-50%); /* Correct for centering alignment */
+  color: #f4e7eff5; /* Icon color */
+}
+
+input {
+  padding: 8px 8px 8px 28px; /* Reduce padding for smaller size */
+  width: 100%; /* Full width for the input */
+  border: 1px solid #f9f8f8ef; /* Border around the input */
+  border-radius: 5px; /* Rounded corners for the input field */
+  font-size: 0.85em; /* Decrease font size slightly */
+}
+
+.error {
+  color: red; /* Error message color */
+  font-size: 0.875em; /* Smaller font size for error messages */
+}
+
+.signup-button {
+  padding: 8px 16px; /* Adjust padding for smaller button */
+  font-size: 0.9em; /* Slightly smaller font for the button */
 }
